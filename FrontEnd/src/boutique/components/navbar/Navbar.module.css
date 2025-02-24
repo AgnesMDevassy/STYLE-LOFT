@@ -1,0 +1,90 @@
+
+.logo{
+    color: maroon;
+    font-size: 50px;
+    font-family:Georgia;
+    font-weight: bold;
+    
+   
+}
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 50px;
+/* padding: 0px 10px 0px 60px; */
+position: absolute;
+/* padding-left: 10%;
+padding-right: 10px; */
+list-style-type: none;
+padding: 10px 40px;
+
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 50px;
+    background-color: palevioletred;
+    
+    /* padding: 0px 10px 0px 60px; */
+    /* position: absolute; */
+    /* padding-left: 10%;
+    padding-right: 10px; */
+    list-style-type: none;
+    padding: 10px 40px;
+    
+    }
+.nav_link{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    /* padding-left: 120%; */
+    list-style-type: none;
+    padding-left: 650px;
+}
+
+.links{
+    text-decoration: none;
+    color:  darkred;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 25px;
+    font-weight: bold;
+}
+.links:hover{
+    color:darkred;
+    list-style-type: none;
+    
+}
+.linkname{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+.mainblock{
+    display: flex;
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 220px;
+    height: 110px;  
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    list-style-type: none;
+    text-decoration: none; 
+}
+.linksss:hover .mainblock{
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;  
+    
+}

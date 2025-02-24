@@ -1,0 +1,27 @@
+.wrapper{
+    width: 400px;
+    height: 300px;
+    color:black;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 400px;  
+}
+.wrapper h1{
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+    color: palevioletred;
+}
+.inputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px; 
+    
+}
+.btnsub{
+    display: flex;
+    justify-content: center;
+
+    
+}
