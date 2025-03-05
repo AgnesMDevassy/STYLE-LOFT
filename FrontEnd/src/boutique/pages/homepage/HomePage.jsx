@@ -1,6 +1,6 @@
 import React from 'react'
 import Styles from './HomePage.module.css'
-import Image from '../../../assets/boutiquehome.png'
+import Image from '../../../assets/bbo.png'
 
 
 const HomePage = () => {

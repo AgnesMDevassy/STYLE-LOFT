@@ -1,48 +1,41 @@
 import React from 'react'
 import Styles from './login.module.css'
-import {  AccountCircle } from '@mui/icons-material'
-import { Box, Button, Card, Checkbox, FormControlLabel, FormGroup, TextField } from '@mui/material'
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import Image from '../../../assets/login.png'
+import {  Lock, Person2Rounded } from '@mui/icons-material'
+
 
 
 
   
 const Login = () => {
   return (
-    <Card className={Styles.wrapper}>
-        
+    <div className={Styles.container}>
+        <div className={Styles.image}>
+            <span className={Styles.image_bg}>
+                  <img src={Image} alt='image'></img></span>
+        </div>
+    <div className={Styles.wrapper}>
+        <form action=''>
             <h1>Login</h1>
-            
-            <Box className={Styles.inputbox} sx={{ display: 'flex', alignItems: 'flex-end' }}>
-        <AccountCircle sx={{ color: ' teal', mr: 1, my: 0.5 }} />
-        <TextField id="input-with-sx" label="Name" variant="standard" />
-      </Box>
-      
-      <Box className={Styles.inputbox} sx={{ display: 'flex', alignItems: 'flex-end' }}>
-        <LockOutlinedIcon  sx={{ color: ' teal', mr: 1, my: 0.5 }} />
-        <TextField id="input-with-sx" label="Password" variant="standard" />
-      </Box> 
-     <Box className={Styles.btnsub}>
-    <Button sx={{backgroundColor:' teal'}}  variant="contained">Submit</Button>
-    </Box>
-    
-            
-            <Box>
-            <FormGroup>
-            <FormControlLabel sx={{color:'teal',paddingLeft:'20px'}} control={<Checkbox Checked />} label="Remember Me" />
-            </FormGroup>
-            
-            <Box className={Styles.forgot}>
+   
+            <div className={Styles.inputbox}>
+                <input type='text'placeholder='Username' required/>
+                <Person2Rounded className={Styles.icon}/>
+            </div>
+            <div className={Styles.inputbox}>
+                <input type='password'placeholder='Password' required/>
+                <Lock className={Styles.icon}/>
+            </div>
+            <div className={Styles.forgot}>
+                <label><input type='checkbox'/>Remember me</label>
                 <a href='#'>Forgot password</a>
-            </Box>
-            </Box>
-          
-            <Box className={Styles.link}>
-                <p> Don't have an account? <a href='#'>Register</a></p>
-            </Box>
-       
+            </div>
+            <button type='submit'>Login</button>
+            
+        </form>
 
-    </Card>
+    </div>
+    </div>
     
   )
 }
